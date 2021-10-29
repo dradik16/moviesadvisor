@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+ 
+{% block content %}
+
+<h1>Here is the list of movies</h1>
+<ul>
+{% for movie in movie_df['title'] %}
+
+<li>{{movie}}</li> 
+<li>{{movie_df.loc[movie_df['title']==movie,'movieId'].values[0]}}</li> 
+{% endfor %}
+</ul>
+<a href="{{ url_for('landing_page')}}">Go back to landing page!</a>
+
+
+{% endblock %}
+
+
+
