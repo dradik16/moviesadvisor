@@ -4,20 +4,13 @@ Online movie recommender based on homemade algorithm working with data from movi
 ## Requirements
 
 Are listed in the requirements file though primarily
-- spacy
+- gunicorn
 - flask
 - pandas
 - heroku
 
-## Architecture
-
-The program architecture is all set from the root directory. So when using bash to run any scripts please use the following structure
-
-```bash
-python -m folder.program
-```
 ## Deployment/Usage
 
 The app was deployed via heroku flask. Please feel free to try it out at:
 
-https://highfivewine.herokuapp.com/
+https://moviesadvisor1.herokuapp.com or alternatively you can run the python code app.py in your terminal refering to the folder gettingstarted in the main folder. 
